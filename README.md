@@ -53,7 +53,7 @@ _Example 2:_
 _Example 3:_ Data was collected and organized by Michal Bogacz, and he used IMDb (Internet Movie Database) as his primary source for collecting 10,000 movies' data.
              The data is a collection of top 10,000 most popular movies from IMDb and describes each movies with categories such as revenues, scores, year released, etc.
 
-_Example 4:_ This data was collected by Rounak Banik. She was able to collect data from TMDB, IMDB, and GroupLens to form a dataset containing 45,000 movies, along with 26 million ratings in total for all movies.
+_Example 4:_ This data was collected by Rounak Banik. He was able to collect data from TMDB, IMDB, and GroupLens to form a dataset containing 45,000 movies, along with 26 million ratings in total for all movies.
 
 **3.How many observations (rows) are in your data?**
 
