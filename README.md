@@ -1,5 +1,5 @@
 # Final Project
-## Domain of Interest
+## Domain of Interest: Popular Movies and Films
 
 **1. Why are you interested in this field/domain?**
 
@@ -20,6 +20,8 @@ _Example 3:_ There is [a short article](https://medium.com/@grayll/the-most-prof
              It gathered data of total box revenues of specific movies to exemplify the success of each movie genres, and
              it ranks the top 4 most profitable genres around the world.
 
+_Example 4:_ We found a [data visualization](https://flowingdata.com/2019/02/20/franchise-box-office/) that used data to compare different franchises and their respective cumulative gross revenues.
+
 **3.What data-driven questions do you hope to answer about this domain (share at least 3)?**
 
 _Question 1:_ Do specific genres in the movie industry have an effect on the budget used to produce the film?
@@ -27,6 +29,8 @@ _Question 1:_ Do specific genres in the movie industry have an effect on the bud
 _Question 2:_ What is the correlation of movies that used data to drive their films vs movies that did not use data ?
 
 _Question 3:_ How does the time of the movie's release correspond to the popularity or the total revenues of movies?
+
+_Question 4:_ How has revenue changed over time?
 
 
 ## Finding Data
@@ -37,7 +41,9 @@ _Example 1:_ I downloaded the [dataset](https://www.kaggle.com/danielgrijalvas/m
 
 _Example 2:_ https://www.kaggle.com/balaka18/tmdb-top-10000-popular-movies-dataset
 
-_Example 3:_ https://www.kaggle.com/michau96/are-popular-movies-good/data
+_Example 3:_ The [dataset](https://www.kaggle.com/michau96/are-popular-movies-good/data) is from Kaggle.
+
+_Example 4:_ The [dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset) is from Kaggle.
 
 **2.How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
 
@@ -46,6 +52,9 @@ _Example 1:_ This data was collected by Daniel Grijalvas. He was able to collect
 _Example 2:_ Main contribution comes through two authors. Both Prateek Majmunder and Balaka Biswas have been collecting this for some time as this is their second version of this data. 
 
 _Example 3:_ Data was collected and organized by Michal Bogacz, and he used IMDb (Internet Movie Database) as his primary source for collecting 10,000 movies' data.
+             The data is a collection of top 10,000 most popular movies from IMDb and describes each movies with categories such as revenues, scores, year released, etc.
+
+_Example 4:_ This data was collected by Rounak Banik. He was able to collect data from TMDB, IMDB, and GroupLens to form a dataset containing 45,000 movies, along with 26 million ratings in total for all movies.
 
 **3.How many observations (rows) are in your data?**
 
@@ -55,6 +64,8 @@ _Example 2:_ There are 9672 observations (rows).
 
 _Example 3:_ There are 10,000 observations (rows).
 
+_Example 4:_ There are 45466 observations (rows).
+
 **4.How many features (columns) are in the data?**
 
 _Example 1:_ There are 15 features (columns).
@@ -62,6 +73,8 @@ _Example 1:_ There are 15 features (columns).
 _Example 2:_ There are 7 features (columns).
 
 _Example 3:_ There are 11 features (columns).
+
+_Example 4:_ There are 24 features (columns).
 
 **5.What questions (from above) can be answered using the data in this dataset?**
 
@@ -73,3 +86,6 @@ _Example 2:_ The data in this dataset can help answer the question:
 
 _Example 3:_ The data in this dataset can be used to answer the question:
 > "Does great rating in movies usually result in financial success for the film?"
+
+_Example 4:_ The data in this dataset can help answer the question:
+> "How has revenue changed over time?"
