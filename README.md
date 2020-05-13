@@ -1,5 +1,5 @@
 # Final Project
-## Domain of Interest
+## Domain of Interest: Popular Movies and Films
 
 **1. Why are you interested in this field/domain?**
 
@@ -36,7 +36,7 @@ _Example 1:_ I downloaded the [dataset](https://www.kaggle.com/danielgrijalvas/m
 
 _Example 2:_
 
-_Example 3:_ https://www.kaggle.com/michau96/are-popular-movies-good/data
+_Example 3:_ The [dataset](https://www.kaggle.com/michau96/are-popular-movies-good/data) is from Kaggle.
 
 **2.How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
 
@@ -45,6 +45,7 @@ _Example 1:_ This data was collected by Daniel Grijalvas. He was able to collect
 _Example 2:_
 
 _Example 3:_ Data was collected and organized by Michal Bogacz, and he used IMDb (Internet Movie Database) as his primary source for collecting 10,000 movies' data.
+             The data is a collection of top 10,000 most popular movies from IMDb and describes each movies with categories such as revenues, scores, year released, etc.
 
 **3.How many observations (rows) are in your data?**
 
