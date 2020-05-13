@@ -15,8 +15,7 @@ _Example 1:_ We found a data driven project that used data to determine which st
 
 _Example 2:_
 
-_Example 3:_ https://medium.com/@grayll/the-most-profitable-film-genres-e91d5fb4cfa5
-             There is a short article talking about popular movie genres and how profitable they are in terms of revenues.
+_Example 3:_ There is [a short article](https://medium.com/@grayll/the-most-profitable-film-genres-e91d5fb4cfa5) talking about popular movie genres and how profitable they are in terms of revenues.
              It gathered data of total box revenues of specific movies to exemplify the success of each movie genres, and
              it ranks the top 4 most profitable genres around the world.
 
