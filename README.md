@@ -19,7 +19,7 @@ _Example 3:_ There is [a short article](https://medium.com/@grayll/the-most-prof
              It gathered data of total box revenues of specific movies to exemplify the success of each movie genres, and
              it ranks the top 4 most profitable genres around the world.
 
-_Example 4:_ We found a data driven project that used data to compare different franchises and their respective cumulative gross revenues.
+_Example 4:_ We found a [data visualization](https://flowingdata.com/2019/02/20/franchise-box-office/) that used data to compare different franchises and their respective cumulative gross revenues.
 
 **3.What data-driven questions do you hope to answer about this domain (share at least 3)?**
 
