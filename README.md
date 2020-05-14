@@ -1,4 +1,4 @@
-# Final Project
+  # Final Project
 ## Domain of Interest: Popular Movies and Films
 
 **1. Why are you interested in this field/domain?**
@@ -81,8 +81,12 @@ _Example 4:_ There are 24 features (columns).
 _Example 1:_ The data in this dataset can help answer the question:
 > "Do specific genres in the movie industry have an effect on the budget used to produce the film?""
 
+This can be answered by comparing movies by genre with their respective budgets.
+
 _Example 2:_ The data in this dataset can help answer the question:
 > "Does the orginal language affect how popular a film can be ?"
+
+This can be answered by comparing the movies by language with their respective popularity.
 
 _Example 3:_ The data in this dataset can be used to answer the question:
 > "How does the time of the movie's release correspond to the popularity or the total revenues of movies?"
