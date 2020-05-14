@@ -91,3 +91,5 @@ _Example 3:_ The data in this dataset can be used to answer the question:
 
 _Example 4:_ The data in this dataset can help answer the question:
 > "How has revenue changed over time?"
+
+This can be done by arranging the movies by year, and comparing the revenues for each year.
