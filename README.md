@@ -15,7 +15,7 @@ _Example 1:_ We found a data driven project that used data to determine which st
 
 _Example 2:_ A stock video company called Story Bloacks, recently just posted an article regarding the reasons why Hollywood loves                data driven work. It is this focus that is able to persuade investors and barin storm new ideas.
              LINK: https://education.storyblocks.com/blog/why-hollywood-loves-data-film-students/
-             
+
 _Example 3:_ There is [a short article](https://medium.com/@grayll/the-most-profitable-film-genres-e91d5fb4cfa5) talking about popular movie genres and how profitable they are in terms of revenues.
              It gathered data of total box revenues of specific movies to exemplify the success of each movie genres, and
              it ranks the top 4 most profitable genres around the world.
@@ -29,6 +29,8 @@ _Question 1:_ Do specific genres in the movie industry have an effect on the bud
 _Question 2:_ What is the correlation of movies that used data to drive their films vs movies that did not use data ?
 
 _Question 3:_ How does the time of the movie's release correspond to the popularity or the total revenues of movies?
+              This question can be answered by grouping the data rows by the release years and taking average of the
+              revenues/scores to then analyze and compare them to on another.
 
 _Question 4:_ How has revenue changed over time?
 
@@ -49,7 +51,7 @@ _Example 4:_ The [dataset](https://www.kaggle.com/rounakbanik/the-movies-dataset
 
 _Example 1:_ This data was collected by Daniel Grijalvas. He was able to collect data from IMDb on 6820 movies from 1986-2016.
 
-_Example 2:_ Main contribution comes through two authors. Both Prateek Majmunder and Balaka Biswas have been collecting this for some time as this is their second version of this data. 
+_Example 2:_ Main contribution comes through two authors. Both Prateek Majmunder and Balaka Biswas have been collecting this for some time as this is their second version of this data.
 
 _Example 3:_ Data was collected and organized by Michal Bogacz, and he used IMDb (Internet Movie Database) as his primary source for collecting 10,000 movies' data.
              The data is a collection of top 10,000 most popular movies from IMDb and describes each movies with categories such as revenues, scores, year released, etc.
