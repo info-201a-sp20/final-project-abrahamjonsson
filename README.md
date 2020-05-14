@@ -29,8 +29,6 @@ _Question 1:_ Do specific genres in the movie industry have an effect on the bud
 _Question 2:_ What is the correlation of movies that used data to drive their films vs movies that did not use data ?
 
 _Question 3:_ How does the time of the movie's release correspond to the popularity or the total revenues of movies?
-              This question can be answered by grouping the data rows by the release years and taking average of the
-              revenues/scores to then analyze and compare them to on another.
 
 _Question 4:_ How has revenue changed over time?
 
@@ -88,6 +86,9 @@ _Example 2:_ The data in this dataset can help answer the question:
 
 _Example 3:_ The data in this dataset can be used to answer the question:
 > "How does the time of the movie's release correspond to the popularity or the total revenues of movies?"
+
+This question can be answered by grouping the data rows by the release years and taking average of the
+revenues/scores to then analyze and compare them to on another.
 
 _Example 4:_ The data in this dataset can help answer the question:
 > "How has revenue changed over time?"
