@@ -84,6 +84,9 @@ _Example 1:_ The data in this dataset can help answer the question:
 _Example 2:_ The data in this dataset can help answer the question:
 > "Does the orginal language affect how popular a film can be ?"
 
+These questions can be answered by comparing the language collumn to that of the popularity and see if
+there is any correlation between the two.
+
 _Example 3:_ The data in this dataset can be used to answer the question:
 > "How does the time of the movie's release correspond to the popularity or the total revenues of movies?"
 
@@ -94,3 +97,4 @@ _Example 4:_ The data in this dataset can help answer the question:
 > "How has revenue changed over time?"
 
 This can be done by arranging the movies by year, and comparing the revenues for each year.
+
