@@ -19,3 +19,11 @@ chart2_function <- function(df) {
   return(barchart)
 }
 
+# This barchart is a useful way to visualize whether or 
+#not the director of the movie has an effect on the revenue produced.
+
+
+# As seen in the barchart, certain directors create movies which have a higher revenue
+# than other lesser known directors.
+
+

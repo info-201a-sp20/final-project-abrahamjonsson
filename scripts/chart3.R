@@ -20,3 +20,9 @@ chart3_function <- function(df) {
                 mapping = aes_string(x = "AST", y = "PTS"))
   return(scatterplot)
 }
+
+# This scatterplot is an effective method for visualizing the association 
+# between the length of a movie and the revenue it produces.
+
+# As seen in the scatterplot, shorter films normally produce lower revenue, but
+# in general runtime doesn't have a strong correlation with revenue.
