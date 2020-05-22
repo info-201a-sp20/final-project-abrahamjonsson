@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 # Load data
-df <- read.csv("~/Desktop/INFO201/final-project-abrahamjonsson/data/movies.csv")
+df <- read.csv("/data/movies.csv")
 
 # Creates a function that returns a barchart  
 # showing the relationship between Directors and Revenue

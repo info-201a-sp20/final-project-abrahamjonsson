@@ -4,7 +4,7 @@ library(dplyr)
 library(lintr)
 
 # Load data
-df <- read.csv("~/Desktop/INFO201/final-project-abrahamjonsson/data/movies.csv")
+df <- read.csv("/data/movies.csv")
 
 # Creates a function which returns a scatterplot 
 # showing the relationship between Runtime and Revenue
