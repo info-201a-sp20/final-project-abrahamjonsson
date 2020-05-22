@@ -1,4 +1,5 @@
 library(dplyr)
+library(knitr)
 
 # Function summarizes the given dataframe and calculates 5 information
 # (number of titles under a genre, total revenue, average score,

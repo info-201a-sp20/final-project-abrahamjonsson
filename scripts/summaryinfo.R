@@ -13,5 +13,5 @@ get_summary_info <- function(dataset) {
   ret$votes <- sum(dataset[, "Vote"])
   ret$avg_score <- round(mean(dataset[, "Score"], na.rm = TRUE), 1)
   ret$year_span <- max(dataset[, "Year"]) - min(dataset[, "Year"])
-  return (ret)
+  return(ret)
 }
