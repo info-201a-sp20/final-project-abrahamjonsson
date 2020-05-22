@@ -17,8 +17,6 @@ chart1_function <- function(df) {
   return(scatterplot) 
 }
 
-movies %>% filter(Revenue == max(movies$Revenue, na.rm = TRUE)) %>% pull(Year)
-
 ## Using a hexplot is an effective way for visualizing the relationship 
 ## between the year the movie was released and the revenue produced.
 
