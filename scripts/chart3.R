@@ -22,7 +22,7 @@ chart3_function <- function(df) {
 }
 
 # This scatterplot is an effective method for visualizing the association 
-# between the length of a movie and the revenue it produces.
+# between the length of a movie (in minutes) and the revenue (in millions) it produces.
 
 # As seen in the scatterplot, shorter films normally produce lower revenue, but
 # in general runtime doesn't have a strong correlation with revenue.
