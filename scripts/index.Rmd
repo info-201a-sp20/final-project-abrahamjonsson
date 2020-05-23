@@ -6,25 +6,58 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library("knitr")
+movies <- read.csv("data/movies.csv")
+source("summaryinfo.R")
+source("summarytable.R")
+source("chart1.R")
+source("chart2.R")
+source("chart3.R")
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Introduction
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The data from this dataset was collected and organized by Michal Bogacz, and he used IMDb (Internet Movie Database) as his primary source for collecting data from a large set of movies. The data is a collection of the most popular movies from IMDb and describes each movies with categories such as revenues, scores, year released, etc. The dataset contains 9,699 unique movies (rows), and displays 11 features (columns) for each movie.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+The link to his original Kaggle post can be found [here](https://www.kaggle.com/michau96/are-
+popular-movies-good/data).
 
-```{r cars}
-summary(cars)
+# Summary Information
+```{r, echo=FALSE}
+get_summary_info(movies)
 ```
 
-## Including Plots
+# Summary Table
+Including the table in our analysis of the movies provides an organized and visually appealing representations of given data. The organization allows readers to analyze the data for themselves to come to brief conclusions about the information. It can be used to convey relationships between different factors; it can also be used to show interesting patterns.
 
-You can also embed plots, for example:
+This particular table reveals that the most of the genres' average scores tend to span between 5 and 8, though there are some outliers to the pattern. Also, it appears that some of the movie genres do not even have metascores due to the fact that none of the movies in those genres have not gotten metascores. Additionally, the total gained revenues from the genres vary greatly.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r, echo=FALSE}
+get_summary_table(movies)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+# Chart 1
+Using a hexplot is an effective way for visualizing the relationship between the year the movie was released and the revenue produced.
+
+As seen in the hexplot, revenue has drastically increased since the early 1900's. The graph shows a consistent upwards slope on average, as well as a max revenue of 936.66 million dollars in 2015.
+
+```{r, echo=FALSE, warning = FALSE}
+get_chart1_function(movies)
+```
+
+# Chart 2
+The second chart is a barchart showing the relationship between Directors and Revenue (in millions). This barchart is a useful way to visualize whether or not the director of the movie has an effect on the revenue produced.
+
+```{r, echo=FALSE, warning = FALSE}
+get_chart2_function(movies)
+```
+
+# Chart 3
+The third chart is scatterplot showing the relationship between Runtime (in minutes) and Revenue (in millions). This scatterplot is an effective method for visualizing the association between the length of a movie and the revenue it produces.
+
+```{r, echo=FALSE, warning = FALSE}
+get_chart3_function(movies)
+```
