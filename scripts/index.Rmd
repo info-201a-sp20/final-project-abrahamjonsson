@@ -6,6 +6,10 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r include = FALSE}
 library(ggplot2)
 library(dplyr)
 library("knitr")
@@ -15,7 +19,6 @@ source("summarytable.R")
 source("chart1.R")
 source("chart2.R")
 source("chart3.R")
-knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
