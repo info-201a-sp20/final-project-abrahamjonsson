@@ -1,6 +1,6 @@
 ---
 title: "FinalProjectAC3"
-author: "Abraham Jonsson"
+author: "Abraham Jonsson, Timothy Joo, Abhinav Cherukuri, Daniel Kim"
 date: "5/21/2020"
 output: html_document
 ---
