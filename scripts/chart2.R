@@ -3,27 +3,27 @@ library(ggplot2)
 library(dplyr)
 
 # Load data
-df <- read.csv("/data/movies.csv")
+df <- read.csv("data/movies.csv")
 
 # Creates a function that returns a barchart  
 # showing the relationship between Directors and Revenue
 chart2_function <- function(df) {
   barchart <- df %>%
-    ggplot(aes_string(x = "Director", y = "Revenue")) +
+    ggplot(aes_string(x = "Score", y = "Revenue")) +
     geom_bar(stat = "identity") +
     labs(
-      title = "Director vs. Revenue",
-      x = "Director",
-      y = "Revenue") +
-    coord_cartesian(ylim = c(0, 200))
+      title = "Score vs. Revenue",
+      x = "Score",
+      y = "Revenue")
   return(barchart)
 }
 
-# This barchart is a useful way to visualize whether or 
-#not the director of the movie has an effect on the revenue (in millions) produced.
+# This barchart is a useful way to visualize the relationship between
+# score of the movie and revenue from the movie. 
 
 
-# As seen in the barchart, more well-known directors create movies which have 
-# a higher revenue than other lesser known directors.
+
+# As seen in the barchart, the highest revenues are centered around the 
+# movies with a score of 6.5.
 
 
