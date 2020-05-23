@@ -3,6 +3,7 @@
 # Loading all packages needed
 library(dplyr)
 library(ggplot2)
+library(lintr)
 
 ## Function contains a hex graph that displays the relationship
 ## between year and revenue for the dataset.
