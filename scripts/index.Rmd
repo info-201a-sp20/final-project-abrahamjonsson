@@ -52,7 +52,7 @@ get_chart1_function(movies)
 ```
 
 # Chart 2
-The second chart is a barchart showing the relationship between Directors and Revenue (in millions). This barchart is a useful way to visualize whether or not the director of the movie has an effect on the revenue produced.
+The second chart is a barchart showing the relationship between Score and Revenue (in millions). This barchart is a useful way to visualize which scores resulted in certain amounts of revenue.
 
 ```{r, echo=FALSE, warning = FALSE}
 get_chart2_function(movies)
