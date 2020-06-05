@@ -32,7 +32,7 @@ make_graph_three <- function(data, year) {
 }
 
 # sets the sidepanel for interactive page 1
-sidebar_bar_graph_three <- sidebarPanel(
+sidebar_bar_graph <- sidebarPanel(
   sliderInput(
     inputId = "Year",
     label = h3("Year"),
@@ -43,8 +43,13 @@ sidebar_bar_graph_three <- sidebarPanel(
 )
 
 # Sets the mainpanel for Interactive Page 3
-description <- mainPanel(
-  h3("Description of Graph"),
-  p("."),
-  plotlyOutput("linegraph")
+description_three <- mainPanel(
+  h3("Description of Bar Graph"),
+  p("This graph showcases the score received by each movie
+    in relative to its revenue produced. The user is able to
+    see this data based on which year the movies were released.
+    Using this data, you are able to see how each year has impacted
+    the amount of movies created as well as the revenue changes
+    happening year after year."),
+  plotlyOutput("bargraph")
 )
