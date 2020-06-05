@@ -2,6 +2,7 @@ library(shiny)
 library(plotly)
 
 source("interactive_page_1.R")
+source("interactive_page_2.R")
 
 page_one <- tabPanel(
   "Page one",
