@@ -1,3 +1,12 @@
 library(dplyr)
+library(plotly)
 
-df <- read.csv('./data/movies.csv', stringsAsFactors = FALSE)
+source("interactive_page_1.R")
+
+df <- read.csv('../data/movies.csv', stringsAsFactors = FALSE)
+
+server = function(input, output) {
+  output$linegraph <- renderPlotly(
+    return(making_line_graph(df, input$genre))
+  )
+}
