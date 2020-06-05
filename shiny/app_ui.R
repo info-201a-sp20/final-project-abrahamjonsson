@@ -3,6 +3,7 @@ library(plotly)
 
 source("interactive_page_1.R")
 source("interactive_page_2.R")
+source("interactive_page_3.R")
 
 page_one <- tabPanel(
   "Insight 1",
@@ -20,4 +21,15 @@ ui <- navbarPage(
   "Movie Data",
   page_one,
   page_two
+)
+
+page_three <- tabPanel(
+  "Page Three",
+  sidebar_bar_graph ,
+  description_three
+)
+
+ui <- navbarPage(
+  "Movie Data",
+  page_three
 )
