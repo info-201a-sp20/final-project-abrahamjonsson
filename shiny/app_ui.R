@@ -13,3 +13,14 @@ ui <- navbarPage(
   "Movie Data",
   page_one
 )
+
+page_two <- tabPanel(
+  "Page two",
+  sidebar_bar_chart,
+  second_description
+)
+
+ui <- navbarPage(
+  "Movie Data",
+  page_two
+)
