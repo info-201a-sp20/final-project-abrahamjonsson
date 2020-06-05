@@ -50,7 +50,7 @@ sidebar_bar_chart <- sidebarPanel(
 
 # Creates the mainpanel for interactive page 2
 second_description <- mainPanel(
-  h3("Description of CHart"),
+  h3("Description of Chart"),
   p("This bar chart shows the pattern between runtime and revenue. 
      Previously, there were other factors that influenced the relationship between the two.
      By allowing the user to filter based on director, the user can analyze the 
