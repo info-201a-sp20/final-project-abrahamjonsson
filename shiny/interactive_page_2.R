@@ -44,7 +44,7 @@ sidebar_bar_chart <- sidebarPanel(
   selectInput(
     inputId = "director",
     label = h3("Directors"),
-    choices = genre_list
+    choices = director_list
   )
 )
 

@@ -6,11 +6,19 @@ library("stringr")
 
 movie <- read.csv("../data/movies.csv")
 
-intro_summary <- mainpanel(
+intro_side <- sidebarPanel(
+  h1("This project was produced by:"),
+  h3("Daniel Kim"),
+  h3("Abhinav Cherukuri"),
+  h3("Timothy Joo"),
+  h3("Abraham Jonsson")
+)
+
+intro_summary <- mainPanel(
   h3("Overview"),
   p("In this project, we did a deep dive into the world of movies, and the 
     different relationships we can draw from the vast amount of data each 
-    movie has to offer.We are interested in popular movies and films because we
+    movie has to offer. We are interested in popular movies and films because we
     want to better understand what kinds of movies are the most financially
     successful as well as critically successful in the eyes of movie 
     reviewers. Popular movies are a huge part of the current generation's 
