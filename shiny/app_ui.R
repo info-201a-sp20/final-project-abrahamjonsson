@@ -17,19 +17,17 @@ page_two <- tabPanel(
   second_description
 )
 
-ui <- navbarPage(
-  "Movie Data",
-  page_one,
-  page_two
-)
-
 page_three <- tabPanel(
-  "Page Three",
-  sidebar_bar_graph ,
+  "Insight 3",
+  sidebar_bar_graph,
   description_three
 )
 
 ui <- navbarPage(
   "Movie Data",
+  page_one,
+  page_two,
   page_three
 )
+
+
