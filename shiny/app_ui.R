@@ -13,3 +13,4 @@ ui <- navbarPage(
   "Movie Data",
   page_one
 )
+

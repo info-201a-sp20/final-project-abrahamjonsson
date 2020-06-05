@@ -1,1 +1,50 @@
-## this is the script for interactive page 3
+# Interactive page 3
+
+# Load Libraries
+library("dplyr")
+library("plotly")
+library("ggplot2")
+library("shiny")
+library("stringr")
+
+# Load Movie Data
+movie <- read.csv("../data/movies.csv")
+
+# Makes a bar graph of score vs revenue per user inputed year
+make_graph_three <- function(data, year) {
+  # Filters by the year
+  filtered <- movie %>%
+    filter(grepl(year, movie[, "Year"], fixed = TRUE)) %>%
+    group_by(Year) %>%
+    summarize(total_rev = sum(Revenue, na.rm = TRUE))
+  
+  # Creates a bar graph using the filterd out data, 
+  final_graph <- scatterplot <- ggplot(filtered) +
+    geom_point(mapping = aes_string(x = "Runtime", y = "Revenue")) +
+    labs(
+      title = "Relationship Between Runtime and Revenue",
+      x = "Runtime",
+      y = "Revenue"
+    )
+  plot_graph <- ggplotly(final_graph, tooltip = "text")
+  
+  return(final_graph)
+}
+
+# sets the sidepanel for interactive page 1
+sidebar_bar_graph_three <- sidebarPanel(
+  sliderInput(
+    inputId = "Year",
+    label = h3("Year"),
+    min = min(movie$Year),
+    max = max(movie$Year),
+    value = 2000
+  )
+)
+
+# Sets the mainpanel for Interactive Page 3
+description <- mainPanel(
+  h3("Description of Graph"),
+  p("."),
+  plotlyOutput("linegraph")
+)
