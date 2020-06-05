@@ -14,7 +14,7 @@ movie <- read.csv("../data/movies.csv")
 make_graph_three <- function(data, year) {
   # Filters by the year
   filtered <- movie %>%
-    filter(grepl(year, movie[, "Year"], fixed = TRUE)) %>%
+    filter(grepl(Year, movie[, "Year"], fixed = TRUE)) %>%
     group_by(Year) %>%
     summarize(total_rev = sum(Revenue, na.rm = TRUE))
   
@@ -26,9 +26,10 @@ make_graph_three <- function(data, year) {
       x = "Runtime",
       y = "Revenue"
     )
-  plot_graph <- ggplotly(final_graph, tooltip = "text")
   
-  return(final_graph)
+  bar_graph <- ggplotly(final_graph, tooltip = "text")
+  
+  return(bar_graph)
 }
 
 # sets the sidepanel for interactive page 1
