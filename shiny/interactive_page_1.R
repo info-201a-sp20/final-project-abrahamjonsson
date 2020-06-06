@@ -56,7 +56,7 @@ sidebar_line_graph <- sidebarPanel(
 # sets the mainpanel for interactive page 1
 description <- mainPanel(
   h3("Description of Graph"),
-  p("This graph is to attempt to answer what the relationship between
+  p("This graph was created in attempt to answer what the relationship between
     the release years and the total earnings of the movies. 
     The displayed line graph shows how the revenues from each genre has
     been exponentially increasing by the years; though this observation

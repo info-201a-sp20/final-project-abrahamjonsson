@@ -50,7 +50,8 @@ sidebar_bar_chart <- sidebarPanel(
 # Creates the mainpanel for interactive page 2
 second_description <- mainPanel(
   h3("Description of Chart"),
-  p("This bar chart shows the pattern between runtime and revenue. 
+  p("This graph was created in attempt to answer what the relationship between
+    the runtime and revenue of movies.  
      Previously, there were other factors that influenced the relationship between the two.
      By allowing the user to filter based on director, the user can analyze the 
      the direct relationship between runtime and revenue. Users can also see the

@@ -44,8 +44,8 @@ sidebar_bar_graph <- sidebarPanel(
 # Sets the mainpanel for Interactive Page 3
 description_three <- mainPanel(
   h3("Description of Scatter Plot"),
-  p("This graph showcases the score received by each movie
-    in relative to its revenue produced. The user is able to
+  p("This graph was created in attempt to answer what the relationship between
+    the score and revenue. The user is able to
     see this data based on which year the movies were released.
     Using this data, you are able to see how each year has impacted
     the amount of movies created as well as the revenue changes
