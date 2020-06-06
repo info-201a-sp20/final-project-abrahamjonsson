@@ -13,16 +13,20 @@ final_main <- mainPanel(
   h3("From Insight 1"),
   p("Upon analyzing this graph, one can see that for most genres there has been
   an exponential growth of total revenues for the movies, and there exists a
-  pattern where it conveys how more recent the year, more revenue there are."),
+  pattern where it conveys how more recent the year, more revenue there are. Given this
+    trend, we can make the assumption that revenue will continue to rise as the years go
+    on."),
   h3("From Insight 2"),
-  p("Previously, there were other factors that influenced the relationship between the two.
-     By allowing the user to filter based on director, the user can analyze the 
-     the direct relationship between runtime and revenue. Users can also see the
-     revenue, grouped by runtime, for movies from 1925-2018 made by that specific director."),
+  p("Users can also see the
+     revenue, grouped by runtime, for movies from 1925-2018 made by that specific director.
+     As you can see in the data for Stephen King, there is a strong positive relationship
+     between runtime and revenue. In general, you can see that as runtime increases, 
+     revenue tends to increase. Given this trend, we can make the assumption that the 
+    data will continue to show that for each director, as runtime increases, revenue will also
+    increase."),
   h3("From Insight 3"),
-  p("The user is able to
-    see this data based on which year the movies were released.
-    Using this data, you are able to see how each year has impacted
-    the amount of movies created as well as the revenue changes
-    happening year after year.")
+  p("The movies that are older, or 'vintage', also tend to have high 
+    scores. In general, there is a trend showing that the most recent movies and 
+    the oldest movies have higher scores than movies in between. This could potentially 
+    be caused by excitement for new movies and appreciation for older movies.")
 )
