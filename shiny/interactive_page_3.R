@@ -6,7 +6,7 @@ library("plotly")
 library("ggplot2")
 library("shiny")
 
-movie <- read.csv("../data/movies.csv")
+movie <- read.csv("data/movies.csv")
 
 # Makes a bar graph of score vs revenue per user inputed year
 make_graph_three <- function(data, year) {
