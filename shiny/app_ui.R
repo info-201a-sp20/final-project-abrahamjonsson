@@ -37,13 +37,16 @@ final_page <- tabPanel(
   final_main
 )
 
-ui <- navbarPage(
-  "Movie Data",
+ui <- fluidPage(
+  includeCSS("style.css"),
+  navbarPage(
+  "Movies!",
   intro_page,
   page_one,
   page_two,
   page_three,
   final_page
+  )
 )
 
 
