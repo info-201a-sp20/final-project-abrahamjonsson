@@ -14,28 +14,28 @@ movie <- read.csv("../data/movies.csv")
 make_graph_three <- function(data, year) {
   # Filters by the year
   filtered <- movie %>%
-    filter(grepl(Year, movie[, "Year"], fixed = TRUE)) %>%
-    group_by(Year) %>%
+    filter(year == movie[, "Year"]) %>%
+    group_by(Score) %>%
     summarize(total_rev = sum(Revenue, na.rm = TRUE))
   
   # Creates a bar graph using the filterd out data, 
   final_graph <- scatterplot <- ggplot(filtered) +
-    geom_point(mapping = aes_string(x = "Runtime", y = "Revenue")) +
+    geom_point(mapping = aes_string(x = "Score", y = "total_rev")) +
     labs(
-      title = "Relationship Between Runtime and Revenue",
-      x = "Runtime",
+      title = "Relationship Between Score and Revenue",
+      x = "Score",
       y = "Revenue"
     )
   
-  bar_graph <- ggplotly(final_graph, tooltip = "text")
+  bar_graph <- ggplotly(final_graph)
   
   return(bar_graph)
 }
 
-# sets the sidepanel for interactive page 1
+# sets the sidepanel for interactive page 3
 sidebar_bar_graph <- sidebarPanel(
   sliderInput(
-    inputId = "Year",
+    inputId = "year",
     label = h3("Year"),
     min = min(movie$Year),
     max = max(movie$Year),
@@ -52,5 +52,5 @@ description_three <- mainPanel(
     Using this data, you are able to see how each year has impacted
     the amount of movies created as well as the revenue changes
     happening year after year."),
-  plotlyOutput("bargraph")
+  plotlyOutput("scatter")
 )

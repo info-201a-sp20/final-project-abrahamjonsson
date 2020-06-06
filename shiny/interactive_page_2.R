@@ -10,7 +10,7 @@ movie <- read.csv("../data/movies.csv")
 making_bar_chart <- function(data, director) {
   # Filters movies made by user inputted director
   filtering <- movie %>%
-    filter(grepl(director, movie[, "Director"], fixed = TRUE)) %>%
+    filter(director == movie[, "Director"]) %>%
     group_by(Runtime) %>%
     summarize(total_rev = sum(Revenue, na.rm = TRUE))
   

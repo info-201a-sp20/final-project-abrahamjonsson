@@ -14,7 +14,7 @@ server = function(input, output) {
   output$barchart <- renderPlotly(
     return(making_bar_chart(df, input$director))
   )
-  output$bargraph <- renderPlotly(
+  output$scatter <- renderPlotly(
     return(make_graph_three(df, input$year))
   )
 }
