@@ -5,7 +5,7 @@ library("shiny")
 library("stringr")
 
 intro_side <- sidebarPanel(
-  h2("This project was produced by:"),
+  h3("This project was produced by:"),
   h4("Daniel Kim"),
   h4("Abhinav Cherukuri"),
   h4("Timothy Joo"),
