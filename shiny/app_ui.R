@@ -31,12 +31,19 @@ page_three <- tabPanel(
   description_three
 )
 
+final_page <- tabPanel(
+  "Conclusion",
+  final_side,
+  final_main
+)
+
 ui <- navbarPage(
   "Movie Data",
   intro_page,
   page_one,
   page_two,
-  page_three
+  page_three,
+  final_page
 )
 
 
