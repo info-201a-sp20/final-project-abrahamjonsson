@@ -3,7 +3,7 @@ library("plotly")
 library("ggplot2")
 library("shiny")
 
-movie <- read.csv("data/movies.csv")
+movie <- read.csv("../data/movies.csv")
 
 # Generates a line graph of year vs revenue
 making_line_graph <- function(data, genre) {

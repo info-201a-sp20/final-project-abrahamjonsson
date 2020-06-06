@@ -6,7 +6,8 @@ library("stringr")
 
 final_side <- sidebarPanel(
   h2("Given the three unique graphs and analyses of the data from insights 1-3,
-     we were able to pull a few key takeaways.")
+     we were able to pull a few key takeaways."),
+  img(src='../www/movietheater.jpg', align = "right")
 )
 
 final_main <- mainPanel(
