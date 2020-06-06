@@ -5,7 +5,7 @@ source("interactive_page_1.R")
 source("interactive_page_2.R")
 source("interactive_page_3.R")
 
-df <- read.csv('data/movies.csv', stringsAsFactors = FALSE)
+df <- read.csv('../data/movies.csv', stringsAsFactors = FALSE)
 
 server = function(input, output) {
   output$linegraph <- renderPlotly(

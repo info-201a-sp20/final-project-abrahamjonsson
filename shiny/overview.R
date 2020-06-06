@@ -9,7 +9,12 @@ intro_side <- sidebarPanel(
   h4("Daniel Kim"),
   h4("Abhinav Cherukuri"),
   h4("Timothy Joo"),
-  h4("Abraham Jonsson")
+  h4("Abraham Jonsson"),
+  img(
+    src = "https://pyxis.nymag.com/v1/imgs/978/4d0/4b4779e1dcb86984abe55c08366f9babe7-
+    13-empty-theater.rhorizontal.w700.jpg",
+    width = "220vw"
+  )
 )
 
 intro_summary <- mainPanel(
