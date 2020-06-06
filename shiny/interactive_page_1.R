@@ -2,9 +2,8 @@ library("dplyr")
 library("plotly")
 library("ggplot2")
 library("shiny")
-library("stringr")
 
-movie <- read.csv("../data/movies.csv")
+movie <- read.csv("data/movies.csv")
 
 # Generates a line graph of year vs revenue
 making_line_graph <- function(data, genre) {
@@ -12,8 +11,8 @@ making_line_graph <- function(data, genre) {
   # If the movie is classifed as a certain genre even if multiple genres
   # are applicable, it passes the filter. (if movie is adventure, comedy, and
   # action, it counts as an action movie)
-  filtering <- movie %>%
-    filter(grepl(genre, movie[, "Genre"], fixed = TRUE)) %>%
+  filtering <- data %>%
+    filter(grepl(genre, data[, "Genre"], fixed = TRUE)) %>%
     group_by(Year) %>%
     summarize(total_rev = sum(Revenue, na.rm = TRUE))
   

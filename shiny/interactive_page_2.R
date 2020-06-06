@@ -2,9 +2,8 @@ library("dplyr")
 library("plotly")
 library("ggplot2")
 library("shiny")
-library("stringr")
 
-movie <- read.csv("../data/movies.csv")
+movie <- read.csv("data/movies.csv")
 
 # Generates a bar chart of Runtime vs revenue based on Director
 making_bar_chart <- function(data, director) {
