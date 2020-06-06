@@ -49,6 +49,10 @@ description_three <- mainPanel(
     see this data based on which year the movies were released.
     Using this data, you are able to see how each year has impacted
     the amount of movies created as well as the revenue changes
-    happening year after year."),
+    happening year after year. As you can see from the graph, the newest movies tend to
+    have high scores. The movies that are older, or 'vintage', also tend to have high 
+    scores. In general, there is a trend showing that the most recent movies and 
+    the oldest movies have higher scores than movies in between.This could potentially 
+    be caused by excitement for new movies and appreciation for older movies"),
   plotlyOutput("scatter")
 )
