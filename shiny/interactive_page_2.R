@@ -56,7 +56,7 @@ second_description <- mainPanel(
      the direct relationship between runtime and revenue. Users can also see the
      revenue, grouped by runtime, for movies from 1925-2018 made by that specific director.
      As you can see in the data for Stephen King, there is a strong positive relationship
-     between runtime and revenue. In this instance, as runtime increases, 
+     between runtime and revenue. In general, you can see that as runtime increases, 
      revenue tends to increase.
     "),
   plotlyOutput("barchart")
