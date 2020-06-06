@@ -4,14 +4,12 @@ library("ggplot2")
 library("shiny")
 library("stringr")
 
-movie <- read.csv("../data/movies.csv")
-
 intro_side <- sidebarPanel(
-  h1("This project was produced by:"),
-  h3("Daniel Kim"),
-  h3("Abhinav Cherukuri"),
-  h3("Timothy Joo"),
-  h3("Abraham Jonsson")
+  h2("This project was produced by:"),
+  h4("Daniel Kim"),
+  h4("Abhinav Cherukuri"),
+  h4("Timothy Joo"),
+  h4("Abraham Jonsson")
 )
 
 intro_summary <- mainPanel(
