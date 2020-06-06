@@ -56,11 +56,12 @@ sidebar_line_graph <- sidebarPanel(
 # sets the mainpanel for interactive page 1
 description <- mainPanel(
   h3("Description of Graph"),
-  p("The line graph conveys the pattern of the total earnings
-  of the movies of the selected genre from each year spanning from 1925 to 2018.
-  Upon analyzing this graph, one can see that for most genres there has been
-  an exponential growth of total revenues for the movies, and there exists a
-  pattern where it conveys how more recent the year, more revenue there are."),
+  p("The displayed line graph shows how the revenues from each genre has
+    been exponentially increasing by the years; though this observation
+    does not apply to all genres, it seems as like that is the general
+    pattern. Such pattern exists probably because of the rise in popularity
+    of that particular genre as well as the popularity of cinema overall.
+    "),
   plotlyOutput("linegraph")
   )
 
